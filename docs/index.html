@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+  <h1>Formulário</h1>
+  <form id="myForm">
+    <div class="form-group">
+      <label for="opcao1">Masculino:</label>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="opcao1" name="opcao" value="Masculino">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="opcao2">Feminino:</label>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="opcao2" name="opcao" value="Feminino">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="opcao3">Outros:</label>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="opcao3" name="opcao" value="Outros">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Interesses:</label><br>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="esporte" name="interesse" value="Esportes">
+        <label class="form-check-label" for="esporte">Esportes</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="leitura" name="interesse" value="Leitura">
+        <label class="form-check-label" for="leitura">Leitura</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="tecnologia" name="interesse" value="Tecnologia">
+        <label class="form-check-label" for="tecnologia">Tecnologia</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="viagens" name="interesse" value="Viagens">
+        <label class="form-check-label" for="viagens">Viagens</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="arte" name="interesse" value="Arte">
+        <label class="form-check-label" for="arte">Arte</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="texto1">Nome:</label>
+      <input type="text" class="form-control" id="texto1" name="texto1">
+    </div>
+    <div class="form-group">
+      <label for="texto2">Time que torce (caso não tenha, coloque nenhum):</label>
+      <input type="text" class="form-control" id="texto2" name="texto2">
+    </div>
+    <div class="form-group">
+      <label for="numero1">Idade:</label>
+      <input type="number" class="form-control" id="numero1" name="numero1" min="0" max="120">
+    </div>
+    <div class="form-group">
+      <label for="numero2">Qual a sua expectativa de idade:</label>
+      <input type="number" class="form-control" id="numero2" name="numero2" min="0" max="120">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  
+  <div id="resposta" class="mt-3"></div>
+</div>
+
+<script src="form.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
